@@ -7,7 +7,7 @@ import {
   import Home from "./Home";
   import HowTo from "./HowTo";
   import Login from "./Login";
-
+  import Header from "./Header";
 
 
 class Main extends Component {
@@ -17,9 +17,7 @@ class Main extends Component {
         
         <HashRouter>
             <div>
-                <div className="container py-5">
-                    <h1 class="title">Universe X</h1>
-                </div>
+                <Header />
             <ul className="header">
                 <li><NavLink exact to="/">Home</NavLink></li>
                 <li><NavLink to="/howto">How To Play</NavLink></li>
@@ -31,7 +29,9 @@ class Main extends Component {
                 <Route path="/login" component={Login}/>
             </div>
             </div>
+            
         </HashRouter>
+   
     );
   }
 }

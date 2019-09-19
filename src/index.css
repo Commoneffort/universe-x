@@ -15,7 +15,9 @@ a:hover{
     margin-bottom: 10px;
     color:black;
 }
-
+.active{
+    text-decoration:none;
+  }
 .container {
     position: relative;
     text-align: center;
@@ -33,14 +35,16 @@ a:hover{
     top:0px;
     left:0px;
     margin:0;
+    color:white;
     background: -webkit-linear-gradient(#d07ae6, rgb(106, 82, 212));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   text-shadow: 2px 2px;
   z-index:10;
-   
-  }
+  text-decoration: none;
+  
+}
 
   	
 .content {
@@ -49,7 +53,6 @@ a:hover{
     padding: 25px 20px 150px 20px;
     margin: 30 auto;
     display: block;
-
     }
 .media-body{
     background: cover;  
@@ -60,7 +63,7 @@ a:hover{
     left:0;
 }
 .overlay {
-    position: fixed; /* Sit on top of the page content */
+    position: absolute; /* Sit on top of the page content */
     display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
@@ -72,7 +75,8 @@ a:hover{
     opacity:0.9;
     z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
-  }
+  
+}
 
 ul {
     list-style-type: none;
@@ -80,12 +84,13 @@ ul {
     padding: 0;
     top: 0;
     z-index:1;
+    
   }
  
   li {
     float: left;
     width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
- 
+    
 }
   
   li a {
@@ -96,6 +101,7 @@ ul {
     text-decoration: none;
     border-right: 1px solid #ffffff;
     margin:-1px;
+    
   }
   
   /* Change the link color to #111 (black) on hover */
@@ -106,3 +112,9 @@ ul {
   li:last-child {
     border-right: none;
   }
+.particle-container{
+    width: 100%;
+   max-height: 300px;
+
+   
+}
