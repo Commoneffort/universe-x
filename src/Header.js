@@ -1,29 +1,21 @@
 import React, { Component } from "react";
 import {NavLink} from "react-router-dom";
-import styled from 'styled-components';
 
 class Header extends Component {
-  render() {
+	render() {
     return (
-      <StyledWrapper>
+    
+           
+        <div className="container">
+        	<div className="hover">
+         
+            <NavLink to="/"><p class="line typing"><h1 class="title">GalaxEOS</h1></p></NavLink>
         
-        <div className="container py-5">
-        <div className="hover">
-            <NavLink to="/"><h1 class="title">Universe X</h1></NavLink>
-        
+        	</div>
         </div>
-        </div>
-      </StyledWrapper>
     );
   }
 }
  
 export default Header;
 
-const StyledWrapper = styled.div`
-
-.active{
-  text-decoration:none;
-}
-}
-`

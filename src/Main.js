@@ -11,25 +11,30 @@ import {
 
 
 class Main extends Component {
+
   render() {
-      
+
     return (
         
         <HashRouter>
             <div>
-                <Header />
-            <ul className="header">
-                <li><NavLink exact to="/">Home</NavLink></li>
+      <div className="header">  
+          <ul>
+          	<div className="nav">
+                <li><NavLink exact to="/"><div class="pulse wrapper down"></div></NavLink></li>
                 <li><NavLink to="/howto">How To Play</NavLink></li>
                 <li><NavLink to="/login">Login</NavLink></li>
-            </ul>
-            <div className="content">
-                <Route exact path="/" component={Home}/>
-                <Route path="/howto" component={HowTo}/>
-                <Route path="/login" component={Login}/>
             </div>
+            <Header />
+              
+          </ul>
+        </div>
+        <div className="content">
+            <Route exact path="/" component={Home}/>
+            <Route path="/howto" component={HowTo}/>
+            <Route path="/login" component={Login}/>
+        </div>           
             </div>
-            
         </HashRouter>
    
     );
@@ -37,3 +42,4 @@ class Main extends Component {
 }
  
 export default Main;
+

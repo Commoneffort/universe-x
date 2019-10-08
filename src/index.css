@@ -1,110 +1,76 @@
-:root{
---mainWhite: #ffffff;
+q:root{
+	--mainWhite: #ffffff;
+	
 }
 
-.a{
-    color:white;
-    text-decoration:none;
+.container{
+	max-width:100%;
+	height:150px;
+	position:fixed;
+	font-family: 'Oswald', sans-serif;
+	color:white;
+	z-index:2;
 }
-a:hover{
-    color:black;
-    text-decoration:none;
+
+.content{
+	max-width:100%;
+	max-height:60;
+	position:fixed;
+	font-family: 'Oswald', sans-serif;
+	color:white;
 }
-    
-.content li {
-    margin-bottom: 10px;
-    color:black;
-}
-.active{
-    text-decoration:none;
-  }
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+
 .title {
     font-family: 'Orbitron', sans-serif;
     font-size: 60px;
-    top:0px;
-    left:0px;
+    top:40px;
+    left:40px;
     margin:0;
-    color:white;
     background: -webkit-linear-gradient(#d07ae6, rgb(106, 82, 212));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
-  text-shadow: 2px 2px;
-  z-index:10;
-  text-decoration: none;
-  
-}
-
-  	
-.content {
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    font-weight: 900;
+     text-shadow: 4px 4px;
+    text-decoration: none;
     color:white;
-    max-width: 100%;
-    padding: 25px 20px 150px 20px;
-    margin: 30 auto;
-    display: block;
-    }
-.media-body{
-    background: cover;  
-    background: center;
-    z-index:-10;
-    position: fixed;
-    top:0;
-    left:0;
-}
-.overlay {
-    position: absolute; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black; /* Black background with opacity */
-    opacity:0.9;
-    z-index: -1; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  
+    padding:0;
+    text-decoration:none;
+    z-index:1;
+    float:left;
+    position:fixed;
+    
+  }	
+.nav{
+	left:80%;
+	position:absolute;
+	top:0px;
+	z-index:10;
 }
 
-ul {
+.ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    top: 0;
-    z-index:1;
-    
-  }
- 
+    top: 0; 
+    }
+  
   li {
-    float: left;
-    width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
-    
+  display: inline;
+  list-style-type: none;
+  margin: 10;
+  
 }
   
   li a {
-    display: block;
-    color:#d07ae6;
-    text-align: center;
-    padding: 1px 19px;
-    text-decoration: none;
-    border-right: 1px solid #ffffff;
-    margin:-1px;
+  font-weight: 200;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  font-size:18px;
+  color: #a10ac7;
     
   }
   
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
     color: blue;
     text-decoration: none;
@@ -112,9 +78,50 @@ ul {
   li:last-child {
     border-right: none;
   }
-.particle-container{
-    width: 100%;
-   max-height: 300px;
 
-   
+/* ---- particles.js container ---- */ 
+
+.particle-container{
+	height: 100%;
+ 	width: 100%;
+  	position: fixed; 
 }
+
+/* ---- typewriter ---- */ 
+.p {
+    color: #00FF41;
+    font-family: 'Courier New', Courier, monospace;
+	font-size: 20px;
+	}
+.line {
+    position: relative;
+    border-right: 4px solid rgb(0, 255, 64);
+    width: 330px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.typing {
+    animation: typewriter 3s steps(25) 1s 1 normal both,
+    blinkCursor 0.6s steps(12) infinite normal;
+}
+    
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 400px;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: #a10ac7;
+    }
+
+    to {
+        border-right-color: white;
+    }
+}
+

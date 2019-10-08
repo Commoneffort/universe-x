@@ -6,16 +6,15 @@ class Login extends Component {
     return (
         <div className="container py-5">
         
-      		<div className="row">
-              
-      			<div className="col-10 mx-auto text-center text-slanted text-black my-5">
-      				
-                      <h2>Login</h2>
-
+        <div className="content">
         
-                </div>
-            </div>
-        </div>
+            <div className="col-10 mx-auto text-center text-slanted text-black my-5">
+                
+            <h2>Login</h2>
+  
+          </div>
+      </div>
+  </div>
         
     );
   }
