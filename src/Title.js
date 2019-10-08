@@ -2,7 +2,7 @@ import React from "react"
 
 function Title ({name,title}) {
     return (
-    
+    <div className="row">
           <div className="col-4  my-2 text-title ">
              <div className="font-xl ">
                 <h1 className="text-capitalize ">
@@ -11,7 +11,7 @@ function Title ({name,title}) {
                 </h1>
             </div>
          </div>
-
+     </div>
     )
   }
 

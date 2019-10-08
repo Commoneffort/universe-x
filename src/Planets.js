@@ -16,10 +16,13 @@ export default class Planets extends Component {
     
       <div>
        <React.Fragment>
-           
        <Title  title="Smart Contract Game"/> 
-           <div className="card-container"> 
-                      <PlanetWrapper className=" col-20 mx-auto  "> 
+       <div class="row">  
+       <div class="col-sm-12">
+    <div class="card">
+       
+           
+                      <PlanetWrapper> 
                          
       			        <PlanetConsumer>
       			            {value => {
@@ -29,9 +32,9 @@ export default class Planets extends Component {
       			            }}
       			        </PlanetConsumer>
                           </PlanetWrapper>	
-                          </div>
-                        
-            
+                          
+                          </div> </div> 
+                          </div> 
       	</React.Fragment>
       </div>
     );
