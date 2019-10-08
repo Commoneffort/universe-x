@@ -8,7 +8,7 @@ const{MyGalaxy} = value;
     return (
       <div className="container-fluid">
       	{MyGalaxy.map(user=>{
-      	return <PlanetUser key={user.id} user={user} 
+      	return <GalaxyUser key={user.id} user={user} 
       	value={value}/>
       	})}
         

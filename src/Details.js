@@ -4,29 +4,12 @@ import {NavLink} from "react-router-dom";
 import {ButtonContainer} from "./Button"
 import Title from "./Title"
 import styled from 'styled-components';
-import EOSIOClient from './EOSIOClient'
 
-const sleep = (milliseconds) => {
-	return new Promise(resolve => setTimeout(resolve, milliseconds))
-  }
+
 
 
 function Details () {
 	
-	var eosio = new EOSIOClient("universe-x");
-	try{  
-  
-	    sleep(500).then(() => {
-	    console.log("you clicked")
-//this.eosio.login()
-	    eosio.login();
-	    })
-    }
-	   catch(err)
-	   {
-		 console.log(err)
-		 alert("Unable to find scatter 1")
-	   }
 	
     return (
     
@@ -94,16 +77,19 @@ function Details () {
                         }}
                         >
                         {inGalaxy? "in Galaxy" : "add to galaxy"}
-                        </ButtonContainer>
+                </ButtonContainer>
                     
                 <MyContainer>
                     <div class="btn-group button"><NavLink to="/Details">OVERVIEW</NavLink></div>
                     <div class="btn-group button"><NavLink to="/CVCourses">COURSES</NavLink></div>
                 </MyContainer>
-                                        
- 		
-	
+                        
         </div>
+        </span>                        
+                        </span>
+                        </span>
+                        </div>
+                        </div>
                 );
                     }}
       

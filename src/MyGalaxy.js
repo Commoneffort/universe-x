@@ -24,7 +24,7 @@ function MyGalaxy () {
          		return(
          		<React.Fragment>
          			<Title title="My planets" />
-      				<NetworkColumns />
+      				<GalaxyColumns />
       				<PlanetsList value={value}/>
       			</React.Fragment>
          		);

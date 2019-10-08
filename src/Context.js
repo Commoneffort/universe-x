@@ -53,8 +53,6 @@ addPlanet = id =>{
 	const planet = tempPlanets[index];
 	planet.inGalaxy = true;
 	planet.count = 1;
-	const menteepower = member.menteepower;
-	member.menteepower = menteepower;
 	
 this.setState(()=>{
     return {planets: tempPlanets, MyGalaxy:[...this.state.MyGalaxy, planet]}
@@ -84,7 +82,7 @@ removeUser = (id) =>{
     tempGalaxy = tempGalaxy.filter(user => user.id !== id);
 
         const index = tempPlanets.indexOf(this.getUser());
-        let removedPlanet = tempPlanet[index];
+        let removedPlanet = tempPlanets[index];
         removedPlanet.inGalaxy= false;
         removedPlanet.count = 0;
 

@@ -1,7 +1,7 @@
 import React, {Component}  from "react"
 import PlanetCard from "./PlanetCard"
 import Title from "./Title"
-import {Planetonsumer} from "./Context"
+import {PlanetConsumer} from "./Context"
 import {PlanetsData} from "./PlanetsData"
 import styled from 'styled-components';
 
