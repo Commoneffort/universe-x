@@ -1,8 +1,7 @@
 import React from "react"
 import {PlanetConsumer} from"./Context";
 import {NavLink} from "react-router-dom";
-import {ButtonContainer} from "./Button"
-import Title from "./Title"
+import {ButtonContainer} from "./Button";
 import styled from 'styled-components';
 
 
@@ -54,16 +53,7 @@ function Details () {
                             <h4 className="text-title text-uppercase text-muted mt-3 mb-2"></h4>
                                 <p className="text-muted lead">{metal, crystal, gas}</p>
 
-                    <span className="container-fluid my-3">
-                        <h2>Planet Actions</h2>
-                            <h4 className="text-title text-uppercase text-muted mt-3 mb-2"></h4>
-                                <p>Send fleets</p>
-                                <p>Abandon planet</p>
                     
-                    <span className="container-fluid my-3">
-                        <h2>Tasks</h2>
-                            <h4 className="text-title text-uppercase text-muted mt-3 mb-2"></h4>
-                                <p>Some task</p>
             <div>
 
             <NavLink to="/Planets">
@@ -80,16 +70,17 @@ function Details () {
                 </ButtonContainer>
                     
                 <MyContainer>
-                    <div class="btn-group button"><NavLink to="/Details">OVERVIEW</NavLink></div>
-                    <div class="btn-group button"><NavLink to="/CVCourses">COURSES</NavLink></div>
+                    <div class="btn-group button"><NavLink to="/tasks">Tasks</NavLink></div>
+                    <div class="btn-group button"><NavLink to="/sendFleets">Send fleets here</NavLink></div>
+                    <div class="btn-group button"><NavLink to="/abandonPlanet">Abandon planet</NavLink></div>
                 </MyContainer>
                         
         </div>
-        </span>                        
-                        </span>
+                              
                         </span>
                         </div>
                         </div>
+                       
                 );
                     }}
       

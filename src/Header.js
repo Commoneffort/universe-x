@@ -5,14 +5,14 @@ class Header extends Component {
 	render() {
     return (
     
-           
-        <div className="container">
-        	<div className="hover">
-         
-            <NavLink to="/"><p class="line typing"><h1 class="title">GalaxEOS</h1></p></NavLink>
         
-        	</div>
-        </div>
+      <div className="container">
+      <div className="hover">
+     
+        <NavLink to="/"><p class=" title line typing">GalaxEOS</p></NavLink>
+    
+      </div>
+    </div>
     );
   }
 }

@@ -2,9 +2,9 @@ import React, { Component } from "react";
 class HowTo extends Component {
   render() {
     return (
-        <div className="container py-5">
+        <div className="container ">
         
-        <div className="content">
+        <div className="text-content">
         
             <div className="col-10 mx-auto text-center text-slanted text-black my-5">
                 

@@ -24,34 +24,29 @@ class Main extends Component {
 
     return (
         
-              <HashRouter>
-            <div>
-            <div>
-            
-                <Header />
-                
-               <div className="container">
-            <ul className="header">
-                <li><NavLink exact to="/">Home</NavLink></li>
-                <li><NavLink to="/howto">How To Play</NavLink></li>
-                <li><NavLink to="/login">Login</NavLink></li>
-                <li><NavLink to="/planets">Planets</NavLink></li>
-               
+        <HashRouter>
+         <div>
+            <div className="header">  
+            <ul>
+                <div className="nav">
+                    <li><NavLink exact to="/">Home</NavLink></li>
+                    <li><NavLink to="/howto">How To Play</NavLink></li>
+                    <li><NavLink to="/login">Login</NavLink></li>
+                    <li><NavLink to="/planets">Play</NavLink></li>
+                </div>
+            <Header />
             </ul>
             </div>
-            <div className="content">
-                <Route exact path="/" component={Home}/>
-                <Route path="/howto" component={HowTo}/>
-                <Route path="/login" component={Login}/>
-                <Route exact path="/planets" component={Planets}/>
-                <Route path="/mygalaxy" component={MyGalaxy}/>
-                <Route path="/details" component={Details}/>
-            </div>
+                <div className="content">
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/howto" component={HowTo}/>
+                    <Route path="/login" component={Login}/>
+                    <Route path="/planets" component={Planets}/>
+                    <Route path="/mygalaxy" component={MyGalaxy}/>
+                    <Route path="/details" component={Details}/>
+                </div>
            
-            </div>
-            </div>
-           
-            
+            </div> 
         </HashRouter>
    
     );

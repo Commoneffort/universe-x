@@ -3,22 +3,24 @@ import PlanetCard from "./PlanetCard"
 import Title from "./Title"
 import {PlanetConsumer} from "./Context"
 import {PlanetsData} from "./PlanetsData"
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export default class Planets extends Component {
 	state = {
 	planets:PlanetsData
 	};
 	render() {
-	
+	    console.log(this.state.planets);
     return (
   
     
       <div>
        <React.Fragment>
-           <div className="py-5">
-       	        <div className="container">
-      		        <Title  title="GalaxEOS - Smart Contract Game"/>    
+           
+       <Title  title="Smart Contract Game"/> 
+           <div className="card-container"> 
+                      <PlanetWrapper className=" col-20 mx-auto  "> 
+                         
       			        <PlanetConsumer>
       			            {value => {
       			            return value.planets.map(planet => {
@@ -26,12 +28,20 @@ export default class Planets extends Component {
       			                });
       			            }}
       			        </PlanetConsumer>
-      		    </div>
-      		</div>	
+                          </PlanetWrapper>	
+                          </div>
+                        
+            
       	</React.Fragment>
       </div>
     );
     
   }
 }
-const TabContainer = styled.div``
+const PlanetWrapper = styled.div`
+.content
+    backgroundColor:white;
+    background: rgba(250,250,250);
+
+}
+`

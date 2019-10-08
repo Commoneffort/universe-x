@@ -40,7 +40,7 @@ const {id, name, img, owner, metal, crystal, gas, battleships, cargoships, colon
       			<NavLink to = "/mygalaxy">
       			<p className="text-capitalize mb-0" disabled>
       			{" "}
-      			expanded view
+      			in Galaxy
       			</p></NavLink>
       			):(
       			<i className="fas fa-plus" />

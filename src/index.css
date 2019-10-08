@@ -10,7 +10,6 @@ q:root{
     --whiteSmoke: #F5F5F5;
 	
 }
-
 .container{
 	max-width:100%;
 	height:150px;
@@ -19,13 +18,14 @@ q:root{
 	color:white;
 	z-index:2;
 }
-
 .content{
 	width:100%;
-	height:100%;
-	position:fixed;
+    height:100%;
+    top:120px;
+	position: relative;;
 	font-family: 'Oswald', sans-serif;
-	color:white;
+    color:rgb(38, 55, 201);
+    background-color: white
 }
 .text-content{
 	width:100%;
@@ -33,13 +33,27 @@ q:root{
 	position:fixed;
 	font-family: 'Oswald', sans-serif;
 	color:white;
-	top:25%;
+    top:18%;
+    left:0px;
+    background-color: white;
+    padding:10px 20px 20px 20px;
+    
+}
+.card-container{
+    width:100%;
+    height:100%;
+    top:10px;
+    left:0px;
+	font-family: 'Oswald', sans-serif;
+	color:white;
+    background-color: white;
+    display: flex;
 }
 
 .title {
     font-family: 'Orbitron', sans-serif;
     font-size: 60px;
-    top:40px;
+    top:20px;
     left:0px;
     margin:0;
     background: -webkit-linear-gradient(#d07ae6, rgb(106, 82, 212));
@@ -56,8 +70,8 @@ q:root{
     position:fixed;
     
   }	
-.nav{
-	left:80%;
+  .nav{
+	left:70%;
 	position:absolute;
 	top:0px;
 	z-index:10;
@@ -82,7 +96,7 @@ q:root{
   text-decoration: none;
   padding: 10px;
   display: inline-block;
-  font-size:18px;
+  font-size:14px;
   color: #a10ac7;
     
   }
@@ -105,7 +119,7 @@ q:root{
 
 /* ---- typewriter ---- */ 
 p {
-    color: white;
+    color: rgb(71, 15, 24);
     font-family: 'Courier New', Courier, monospace;
 	font-size: 20px;
 	}
@@ -147,20 +161,6 @@ p {
 
 
 
-
-:root{
-    --mainWhite: #F3F3F3;
-    --mainGreen: rgba(81,198,224,1);
-    --transition: all 1s linear;
-    --mainDark: #232528;
-    --lightGreen: #11f58f;
-    --darkGreen: #1fd97f;
-    --hotPink: #FF69B4;
-    --violet: #EE82EE;
-    --whiteSmoke: #F5F5F5;
-    
-    }
-    
     img {
       position: relative;
       max-width: 100%;
@@ -169,13 +169,13 @@ p {
     h2{
     font-family: 'Oswald', sans-serif;
         font-size: 30px;
-          color:black;
+          color:powderblue;
           margin:20px;
     }
         
     .body {
-      background-color: #FFFFFF;
-      color:black;
+      background-color: rgb(245, 135, 71);
+      color:olive;
       padding: 0;
       margin: 0px;
        
@@ -183,9 +183,9 @@ p {
     }
     
     .page-body {
-      background-color: #FFFFFF;
+      background-color: rgb(104, 207, 248);
       background-size: auto;
-      color:black;
+      color:rgb(227, 241, 21);
       display: fixed;
      
     }
@@ -193,7 +193,7 @@ p {
     .font-xl{
         font-family: 'Oswald', sans-serif;
         font-size: 20;
-          color:black;
+          color:rgba(0, 26, 255, 0.603);
           margin:20px;
         }
         
@@ -202,6 +202,7 @@ p {
         font-size: 20;
           font-weight:100;
           margin:20px;
+          color:blue;
         }
     
     .logo{
@@ -215,73 +216,22 @@ p {
       @include img-fluid;
     }
     
-    .nav {
-         padding: 1px;
-         color:white;
-         display: flex;
-         position: fixed;
-         top: 0;
-         left:10%;
-         width:100%;
-         z-index: 1;	
-    }
     
-    .nav a:hover {
-         background-color: black;
-         color: var(--lightGreen);
-    }
-    
-    .nav a.active {
-         color: var(--darkGreen);
-    }		
-    ul.nav li {
-         display: inline;
-         list-style-type: none;
-         margin: 0;
-    }
-    ul.nav li a { 
-          font-weight: 200;
-          text-decoration: none;
-          padding: 13px;
-          display: inline-block;
-          font-size:14px;
-          color:white;
-    }
-    a{
-        color:white;
-        text-decoration:none;
-    }
-    a:hover{
-        color:black;
-        text-decoration:none;
-    }
     
     .text.white{
-        color: var(--mainWhite);
+        color: var(--hotPink);
     }
     .text.green{
         color: var(--lightGreen);
         }
         
-    .content {
-        background: rgba(0,230,142,1);
-        background: -moz-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,230,142,1)), color-stop(5%, rgba(0,230,142,1)), color-stop(100%, rgba(0,149,168,1)));
-        background: -webkit-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: -o-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: -ms-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: linear-gradient(to right, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e68e', endColorstr='#0095a8', GradientType=1 );
-        padding: 0px;
-        color:white;
-        width:100%; 
-    }
+   
     .content li {
       margin-bottom: 10px;
-      color:black;
+      color:blueviolet;
     }
     .active {
-      color: black;
+      color: green;
       }
     .button {
         background: linear-gradient(to right, rgba(103, 251, 162, 0.988), rgba(6, 234, 193, 1));
@@ -291,7 +241,7 @@ p {
         border-radius: 50px;
         box-shadow:2px 2px 5px 0px rgba(1,0,0,0.2);
         border: solid 0px rgba(17, 17, 17, 0.1);
-        color: white;
+        color: red;
         font-family: 'Work Sans', sans-serif;
         font-size: 16px;
         font-weight: 400;
@@ -343,37 +293,7 @@ p {
     height: 300px;
     }
     
-    .chat.field {
-        width: 100%;
-        max-width: 352px;
-        height: 48px;
-        border-radius: 4px;
-        background-color: #3ecf8e;
-        border: solid 1px rgba(17, 17, 17, 0.1);
-        color: #ffffff;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        margin-top: 16px;
-        cursor: pointer;
-    }
     
-    .chat:hover {
-        background-color: #1BB978;
-    }
-    
-    .chat:focus {
-        outline-color: #3ecf8e;
-    }
-    
-    .chat.validation {
-        color: #111111;
-        font-family: 'Work Sans', sans-serif;
-        margin-top: 16px;
-        font-weight: 300;
-        width: 100%;
-        max-width: 352px;
-    }
     
     .cart-icon{
         cursor:pinter;
@@ -384,30 +304,13 @@ p {
         border-radius: 50%;
         width:100%;
     }
-    .btn-group  {
-    
-      background-color: var(--darkGreen); /* Green background */
-      border: 1px solid var(--lightGreen); /* Green border */
-      cursor: pointer; /* Pointer/hand icon */
-      float: center; /* Float the buttons side by side */
-      border-radius:0;
-    }
-    
-    .btn-group :not(:last-child) {
-      border-right: none; /* Prevent double borders */
-    }
-    
-    /* Add a background color on hover */
-    .btn-group:hover {
-      background-color: var(--lightGreen);  
-    }
+  
     
     .media{
         flex: 1;
-        alignItems: 'stretch';
-        justifyContent: 'center';
-        paddingTop: Constants.statusBarHeight;
-        backgroundColor: '#ecf0f1';
+        alignItems: stretch;
+        justifyContent: center;
+        background-color: brown;
         max-width:100%;
         position:relative;
         top:90px;
@@ -419,22 +322,10 @@ p {
         opacity: 0.5;
         z-index: 0;
         max-width:100%;
-        
+        background-color: #FF69B4;
     }
-    .footer{	
-        background-color:black;
-        color: white;
-        bottom:0;
-        width:100%;
-        height:100%;
-        left:0;
-        position:relative;
-        z-index:-1;
-    }
-    .nav-container{
-        left:60%;
-        position:fixed;
-    }
+  
+   
     
     .section {
       max-width: 100%;
@@ -445,7 +336,8 @@ p {
       left: 50%;
       right: 50%;
       bottom: 0;
-      font-size:20px;  
+      font-size:20px;
+      background-color: #3ecf8e  
     }
     .body-section{
         width: 100%;
@@ -453,143 +345,8 @@ p {
           padding: 50px 30px 150px 30px;
           margin: 30 auto;
           display: block;
-          color:black; 
-    }
-    .heroHeader {
-      height: 0px;
-      background-color:rgba(0,230,142,1);
-        background: -moz-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,230,142,1)), color-stop(5%, rgba(0,230,142,1)), color-stop(100%, rgba(0,149,168,1)));
-        background: -webkit-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: -o-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: -ms-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: linear-gradient(to right, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e68e', endColorstr='#0095a8', GradientType=1 );
-      z-index:1;
-      background-size: cover;
-      left: 0;
-      right: 0;
-      position: fixed;
-      top: 0;
-      display: flex; 
+          color:rgb(58, 5, 5); 
+          background-color: #a10ac7
     }
     
-    .overlay {
-      position: fixed; /* Sit on top of the page content */
-      display: none; /* Hidden by default */
-      width: 100%; /* Full width (cover the whole page) */
-      height: 100%; /* Full height (cover the whole page) */
-      top: 0; 
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: black; /* Black background with opacity */
-      z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
-      cursor: pointer; /* Add a pointer on hover */
-    }
-    
-    
-    
-    /*Hamburger menu and navigation bar*/
-    .top-menu {
-        background-color:rgba(0,230,142,1);
-        background: -moz-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,230,142,1)), color-stop(5%, rgba(0,230,142,1)), color-stop(100%, rgba(0,149,168,1)));
-        background: -webkit-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: -o-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: -ms-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        background: linear-gradient(to right, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e68e', endColorstr='#0095a8', GradientType=1 );
-         width:100%;
-        user-select: none;
-        z-index:1;
-        padding: 10px;
-        color:white;
-        position: fixed;
-        top: 0;
-        right:0%;
-        padding: 7px 10px 20px 590px;
-    }
-    
-    
-    .top-menu > .right {
-        float: right;
-    }
-    
-    .top-menu > .right > * {
-        margin-left: 5px;
-    }
-    
-    .top-menu > .left {
-        float: left;
-    }
-    
-    .top-menu > .left > * {
-        margin-right: 5px;
-    }
-    
-    .top-menu > .left > *, .top-menu > .right > * {
-        padding: 0px;
-        display: inline-block;
-        text-align: center;
-        min-width: 20px;
-    }
-    
-    .top-menu *:hover{
-        cursor: pointer;
-    }
-    
-    .clear-fix {
-        clear: both;
-    }
-    
-    .top-menu .top-menu-icon {
-        padding: 10px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: none;
-    }
-    
-    @media screen and (max-width: 600px) {
-        .top-menu {
-            padding: 10px 0px 50px 390px;
-            max-height: 0;
-            overflow: hidden;
-            z-index:1;
-        }
-    
-        .top-menu > .left, .top-menu > .right {
-            display: none;
-        }
-    
-        .top-menu-icon {
-            display: block !important;
-            z-index:1;
-        }
-    }
-    
-    @media screen and (max-width: 600px) {
-        .top-menu.toggled {
-            padding: 0px 0 0 30;
-            max-height: 1500px;
-            transition: max-height 1s;
-            z-index:1;
-        }
-    
-        .top-menu.toggled > .left {
-            border-bottom: 1px solid black;
-            margin: 5px 0 0 0 ;
-            z-index:1;
-        }
-    
-        .top-menu.toggled *:not(.top-menu-icon) {
-            float: none;
-            display: block !important;
-            text-align: right;
-            margin: 20;
-            z-index:1;
-        }
-    
-    }
     
