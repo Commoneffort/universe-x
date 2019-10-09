@@ -28,12 +28,6 @@ class Main extends Component {
          <div>
             <div className="header">  
             <ul>
-                <div className="nav">
-                    <li><NavLink exact to="/">Home</NavLink></li>
-                    <li><NavLink to="/howto">How To Play</NavLink></li>
-                    <li><NavLink to="/login">Login</NavLink></li>
-                    <li><NavLink to="/planets">Play</NavLink></li>
-                </div>
             <Header />
             </ul>
             </div>

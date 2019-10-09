@@ -42,9 +42,8 @@ export default class Planets extends Component {
   }
 }
 const PlanetWrapper = styled.div`
-.content
-    backgroundColor:white;
-    background: rgba(250,250,250);
 
-}
+  
+
+
 `

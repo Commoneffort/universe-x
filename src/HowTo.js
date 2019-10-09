@@ -2,7 +2,7 @@ import React, { Component } from "react";
 class HowTo extends Component {
   render() {
     return (
-        <div className="container ">
+        <div className="container py-5">
         
         <div className="text-content">
         
