@@ -8,8 +8,7 @@ class Home extends Component {
     
     return (
         <div>
-        
-            
+        <div class="container">
         <div class="particle-container">
              <Particles 
               params={{
@@ -105,7 +104,7 @@ class Home extends Component {
                     
                 
             }} />
-            
+            </div>
         </div>
         </div>
              );

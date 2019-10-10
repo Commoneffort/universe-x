@@ -16,7 +16,8 @@ export const PlanetsData = [
       battleships: 0,
       cargoships:0,
       colonizers: 0,
-	  inGalaxy: false,
+      inGalaxy: false,
+      time:0,
 	  count: 0,
 	  total: 0
 	
@@ -34,6 +35,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 },
@@ -51,6 +53,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 }, 
@@ -69,6 +72,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 	
@@ -88,6 +92,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 	
@@ -107,6 +112,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 	
@@ -126,6 +132,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 	
@@ -145,6 +152,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 	
@@ -164,6 +172,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 	
@@ -183,6 +192,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 	
@@ -202,6 +212,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 	
@@ -221,6 +232,7 @@ export const PlanetsData = [
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 	
@@ -246,6 +258,7 @@ export const PlanetDatail =
     cargoships:0,
     colonizers: 0,
     inGalaxy: false,
+    time:0,
     count: 0,
     total: 0
 }

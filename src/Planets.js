@@ -12,38 +12,20 @@ export default class Planets extends Component {
 	render() {
 	    console.log(this.state.planets);
     return (
-  
-    
-      <div>
-       <React.Fragment>
-       <Title  title="Smart Contract Game"/> 
-       <div class="row">  
-       <div class="col-sm-12">
-    <div class="card">
-       
-           
-                      <PlanetWrapper> 
-                         
-      			        <PlanetConsumer>
-      			            {value => {
-      			            return value.planets.map(planet => {
-      				        return <PlanetCard  key={planet.id} planet={planet}/>;
-      			                });
-      			            }}
-      			        </PlanetConsumer>
-                          </PlanetWrapper>	
-                          
-                          </div> </div> 
-                          </div> 
-      	</React.Fragment>
-      </div>
+
+	        <PlanetConsumer>
+      			{value => {
+      			return value.planets.map(planet => {
+      				return <PlanetCard  key={planet.id} planet={planet}/>;
+      			         });
+      			 }}
+      		</PlanetConsumer>
+      
     );
     
   }
 }
 const PlanetWrapper = styled.div`
-
-  
 
 
 `

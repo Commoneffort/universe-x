@@ -14,6 +14,7 @@ import Index from "./index.css";
 import Planets from "./Planets";
 import MyGalaxy from "./MyGalaxy"
 import Details from "./Details"
+import PlanetDetails from "./PlanetDetails"
 import Modal from "./Modal"
 import Title from "./Title"
 
@@ -38,6 +39,7 @@ class Main extends Component {
                     <Route path="/planets" component={Planets}/>
                     <Route path="/mygalaxy" component={MyGalaxy}/>
                     <Route path="/details" component={Details}/>
+                    <Route path="/planetdetails" component={PlanetDetails}/>
                 </div>
            
             </div> 
