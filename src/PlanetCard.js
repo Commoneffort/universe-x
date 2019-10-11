@@ -37,7 +37,7 @@ const {id, name, img, owner, Y, X, metal, crystal, gas, battleships, cargoships,
       				value.addPlanet(id);
 					value.openModal(id);
 						}}
-      			><i className="fas fa-plus" />
+      			>
       		{inGalaxy?(
       			<NavLink to = "/mygalaxy">
       			<p className="card-text mb-0" disabled>
@@ -45,7 +45,7 @@ const {id, name, img, owner, Y, X, metal, crystal, gas, battleships, cargoships,
       			
       			</p></NavLink>
       			):(
-      			<h2>+</h2>
+                    <i className="fas fa-plus" />
 						)}
       		</button>
 					</div>)}
@@ -136,6 +136,8 @@ planet:PropTypes.shape({
 const PlanetWrapper = styled.div`
 
 .card{
+
+    
 	transition:all 0.5s linear;
     box-shadow:6px 6px 6px 0px rgba(1,0,0,0.2);
     border:0;
@@ -148,36 +150,38 @@ const PlanetWrapper = styled.div`
     background: linear-gradient(45deg, rgba(230,124,230,1) 0%, rgba(130,18,130,1) 26%, rgba(0,0,0,1) 78%, rgba(0,0,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67ce6', endColorstr='#000000', GradientType=1 );
 	
+    border-style:solid;
+    border-color:white;
+    border-width:0.5px;
+    border-radius:1rem;
 }
+
 .card-text
 {
-    color:white
+    color:white;
     font-size:1.7rem;
     font-family: Oswald, sans-serif;
+    
 }
 .card-footer{
-	color: black;
-	background-color:background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );;
-    transition:all 0.5s linear;
-   
+	color: white;
+    background-color:black;
+    border-style:solid;
+    border-color:white;
+    border-width:0.5px;
+    border-bottom-radius:1rem;
 	
 }
 &:hover{
-	.card{
-    box-shadow:2px 2px 5px 0px rgba(2,0,0,0.2);
-    background:black;
-}
 	.card-footer {
-	background: rgba(250,250,250);
-	}}
-	
+    background: rgba(254,250,250);
+    color:black;
+    transition:all 0.5s linear;
+    box-shadow:8px 8px 8px 2px rgba(1,0,0,0.2);
+    text-decoration:none;
+    }
+}
+
 .images-container{
 	position:relative;
     overflow:hidden;

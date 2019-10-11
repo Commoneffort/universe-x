@@ -9,33 +9,32 @@ import styled from 'styled-components';
 
 function MyGalaxy () {
     return (
-      <div class="page-body">
-      <div class="body-section">
-		<StyledWrapper>
-         
-         	<div class="btn-group button"><NavLink to="/mygalaxy">MY GALAXY</NavLink></div>
-        
+       
+                
+                    <StyledWrapper>
          	
- 		<PlanetConsumer>
+ 		                <PlanetConsumer>
+                             
          
-         {value =>{
-         	const {MyGalaxy} = value;
-         	if(MyGalaxy.length>0){
-         		return(
-         		<React.Fragment>
-         			<Title title="My planets" />
-      				<GalaxyColumns />
-      				<PlanetsList value={value}/>
-      			</React.Fragment>
-         		);
-         	}else{
-         		return  <EmptyGalaxy />;
-         	}
-         	}}
-         </PlanetConsumer>
- 		</StyledWrapper>
- 		</div>
-	</div>
+                        {value =>{
+                            const {MyGalaxy} = value;
+                            if(MyGalaxy.length>0){
+                                return(
+                                <React.Fragment>
+                                    <Title title="My planets" />
+                                    <GalaxyColumns />
+                                    <PlanetsList value={value}/>
+                                </React.Fragment>
+                                );
+                            }else{
+                                return  <EmptyGalaxy />;
+                            }
+                            }}
+                        </PlanetConsumer>
+
+ 		            </StyledWrapper>
+                
+            
     )
   }
 
@@ -44,7 +43,9 @@ export default MyGalaxy
 
 
 const StyledWrapper = styled.div`
-
+p{
+    color:black}
+}
 .font-s{
  a{
 	color:black;

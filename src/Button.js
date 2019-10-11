@@ -16,7 +16,7 @@ border-color:white;
 margin-left:20px;
 
 &:hover {
-	background: ${prop => prop.MyGalaxy ? "black" : "white"};
+	background: ${prop => prop.MyGalaxy ? "white" : "white"};
 	color: black;
 }
 &:focus {

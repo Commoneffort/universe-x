@@ -24,9 +24,9 @@ function GalaxyColumns () {
       		<div className="col-10 mx-auto col-lg-2">
       			<p className="text-uppercase">Remove</p>
       		</div>
-      		
       	</div>
-      </div>
+    </div>
+    
     )
   }
 

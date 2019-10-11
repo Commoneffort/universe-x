@@ -9,44 +9,41 @@ function GalaxyUser ({user,value}) {
 
     return (
     <MyContainer>
-      <div className="row my-2 text-capitalize text-center">
-        <div className="col-10 mx-auto col-lg-2">
-        <NavLink to = "/Details">
+      
+       
+        <div class="card">
+            <div class="card-body">
+            <div className="row my-2 text-capitalize text-center">
+            <div className="col-10 mx-auto col-lg-2">
+        <NavLink to = "/PlanetDetails">
         	<img src={img}  style={{width: "5rem", height: "5rem"}}
-        	className="img-fluid" alt="planet" />
+        	className="img-fluid" alt="planet" /><p>{name}</p>
         	</NavLink>
+        	
         </div>
         <div className="col-10 mx-auto col-lg-2">
-        	<span className="d-lg-none">planet : </span>
-        	{name}
-        </div>
-        <div className="col-10 mx-auto col-lg-2">
-        	<span className="d-lg-none">owner : </span>
+        	<p>owner : </p>
         	{owner}
         </div>
         <div className="col-10 mx-auto col-lg-2">
-        	<span className="d-lg-none">metal : </span>
+        	<p>metal : </p>
         	{metal}
-        </div>
-        <div className="col-10 mx-auto col-lg-2">
-        	<span className="d-lg-none">crystal : </span>
+        	<p>crystal : </p>
         	{crystal}
-        </div>
-        <div className="col-10 mx-auto col-lg-2">
-        	<span className="d-lg-none">gas: </span>
+        	<p>gas: </p>
         	{gas}
         </div>
         <div className="col-10 mx-auto col-lg-2">
-        	<span className="d-lg-none">battleship: </span>
+        	<p>battleship: </p>
         	{battleships}
-        </div>
-        <div className="col-10 mx-auto col-lg-2">
-        	<span className="d-lg-none">cargoship : </span>
+        	<p>cargoship : </p>
         	{cargoships}
+        	<p>colonizer : </p>
+        	{colonizers}
         </div>
         <div className="col-10 mx-auto col-lg-2">
-        	<span className="d-lg-none">colonizer : </span>
-        	{colonizers}
+        	<p>expand </p>
+        	
         </div>
         
       	<div className="col-10 mx-auto col-lg-2">
@@ -55,8 +52,11 @@ function GalaxyUser ({user,value}) {
          </div>
          </div>
          
-      
+         </div>
+         </div>
      </div>
+
+    
      </MyContainer>
     );
   }
@@ -65,4 +65,24 @@ function GalaxyUser ({user,value}) {
 export default GalaxyUser
 
 const MyContainer = styled.div`
-img{border-radius:50%}`
+position:relative;
+font-family:Oswald;
+display:block;
+padding:10px 0px;
+img{
+    border-radius:50%
+}
+p{
+    font-size:16px;
+}
+.card{
+    background:white;
+	transition:all 0.5s linear;
+    box-shadow:8px 8px 8px 2px rgba(1,0,0,0.2);
+}
+&:hover{
+	.card{
+    box-shadow:2px 2px 5px 0px rgba(2,0,0,0.2);
+    background:#c7c6c6;
+}
+`
